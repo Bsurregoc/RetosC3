@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente Ajax</title>
+    <!-- Añado un icono -->
+    <link rel="icon" href="images/planet.ico" type="image/x-icon">
+    </link>
+    <!-- Referencia a archivo css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    </link>
+    <!-- Referencia a javascript -->
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+    <h1>Pruebas Reto #2</h1>
+    </header>
+    <h2>Consultas Disfraz</h2>
+    <button onclick="consultar_costume()"> Mostrar Disfraces</button>
+    <button onclick="insertar_costume()"> Insertar Nuevo Disfraz</button>
+    <button onclick="borrar_costume()"> Borrar Disfraz</button>
+    <button onclick="actualizar_costume()"> Actualizar Disfraz</button>
+    <button onclick="consultar_Idcostume()"> Consultar ID Disfraz</button>   
+
+    <input type="number" id="idCodigo_Costume" placeholder="Codigo Disfraz"></input>
+
+    <div id="idDivConsulta_costume"></div>
+    </section>
+
+    <section>
+    <h2>Consultas Cliente</h2>
+    <input type="number" id="idCodigo_Client" placeholder="Digita Id"></input>
+    <input type="text" id="idCodigo_Client_name" placeholder="Digita Nombre"></input>
+    <input type="text" id="idCodigo_Client_email" placeholder="Digita Correo"></input>
+    <input type="number" id="idCodigo_Client_age" placeholder="Digita Edad"></input>
+    <button onclick="consultar_client()"> Mostrar Clientes</button>
+    <button onclick="insertar_client()"> Insertar Nuevo Cliente</button>
+    <button onclick="borrar_client()"> Borrar Cliente</button>
+    <button onclick="actualizar_client()"> Actualizar Cliente</button>
+    <button onclick="consultar_Idclient()"> Consultar ID Cliente</button>
+    
+    <div id="idDivConsulta_client"></div>
+
+    </section>
+
+
+</body>
+
+</html>
